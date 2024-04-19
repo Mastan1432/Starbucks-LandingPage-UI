@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--landing pagee-->
+        <div class="landing" >
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade items">
+                    <img src="./images/coffe1.png" alt="" id="img1">
+    
+                </div>
+                <div class="mySlides fade items">
+                    <img src="./images/coffe2.png" alt="" id="img2">
+    
+                </div>
+                <div class="mySlides fade items">
+                    <img src="./images/coffe4.png" alt="" id="img3">
+    
+                </div>
+                <div class="mySlides fade items">
+                    <img src="./images/coffe5.png" alt="" id="img4">
+    
+                </div>
+                <div class="mySlides fade items">
+                    <img src="./images/coffe6.png" alt="" id="img5">
+    
+                </div>
+            </div>
+            <div class="sides left" >
+                <span>.</span>
+            </div>
+            <div class="sides right" >
+                <span>.</span>
+            </div>
+            <div style="text-align: center;" class="indicator">
+                <span class="dot" ></span>
+                <span class="dot"></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+            </div>
+            <div class="bottom">
+                <div class="heading" >
+                    <h1>Amazing Taste </h1>
+                    <h1>of coffee</h1>
+                </div>
+                <div class="get-started" onclick="go_to_homepage()">
+                    <h1>Get Started</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="homepage" >
+            <div class="homepage-top">
+                <div class="homepage-top-left">
+                    <h1>Discover</h1>
+                </div>
+                <div class="homepage-top-right">
+                    <div class="orders">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="bar">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                </div>
+                <div class="burger_container">
+                    <div class="login">Login</div>
+                    <div class="favourites">favourites</div>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search for a city" spellcheck="false" >
+                <button class="fas fa-search search-btn"></button>
+                <button class="fas fa-sliders filter"></button>
+            </div>
+            <div class="slider-container">
+                <div class="coffe_slider">
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                        </div>
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                        </div>
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div" >
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                        </div>
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked" ></i>
+                         </div>
+                    </div>
+                    <div class="coffes active">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked" ></i>
+                         </div>
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                         </div>
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked" ></i>
+                         </div>
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked" ></i>
+                         </div>
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked" ></i>
+                         </div>
+                       
+                    </div>
+                    <div class="coffes">
+                        <img src="./images/capachino.png" alt="" class="coffe_image">
+                        <div class="coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="coffe-name">
+                            <h1>Cappuccino</h1>
+                        </div>
+                        <div class="price like_div">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="like">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                         </div>
+                    </div>
+                </div>
+            </div>
+              
+
+            <div class="homepage-bottom">
+                <div class="bottom-header">
+                    <h1>POPULAR</h1>
+                    <a href="" class="see_all_link">See All</a>
+                </div>
+                <div class="bottom-content">
+                    <div class="bottom-content-left">
+                        <img src="./images/light-capaccino.png" alt="">
+                    </div>
+                    <div class="bottom-content-right">
+                        <div class="bottom-coffe-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <h1>4.5</h1>
+                        </div>
+                        <div class="bottom-coffe-name">
+                            <h1>Light Cappuccino</h1>
+                        </div>
+                        <div class="bottom-price">
+                            <h1>$5.00</h1>
+                        </div>
+                        <div class="bottom-like like_div">
+                            <i class="fa-regular fa-heart" id="like" ></i>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                         </div>
+                         <div class="bottom-order">
+                            <button>Order Now</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--item showcase-->
+        <div class="item-showcase" >
+            <div class="header">
+                <div class="left-header">
+                    <button class="back" ><i class="fa-solid fa-chevron-left"></i> Back</button>
+                </div>
+                <div class="right-header">
+                    <div class="item-like like_div">
+                        <i class="fa-regular fa-heart" id="like" ></i>
+                        <i class="fa-solid fa-heart" id="liked"></i>
+                    </div>
+                    <div class="item-orders">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="item">
+                <img src="./images/capachino.png" alt="">
+            </div>
+            <div class="item-content">
+                <div class="content-container">
+                    <div class="item-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <h1>4.5</h1>
+                    </div>
+                    <div class="item-name">
+                        <h1>Light Cappuccino</h1>
+                    </div>
+                    <div class="item-price">
+                        <h1>$5.00</h1>
+                    </div>
+                    <div class="item-description">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officia fugit deleniti vero magnam cum qui neque iure voluptates ullam.</p> 
+                    </div>
+                     <div class="item-order">
+                        <button>Order Now</button>
+                     </div>
+                </div>
+            </div>
+
+
+
+            <div class="orderNow">
+                <div class="order_name">
+                    <h1>Light Cappuccino</h1>
+                </div>
+                <div class="order_quantity">
+                    <h1>Quantity</h1>
+                    <div class="quantity_container">
+                        <div class="minus" onclick="decreaseQuantity()">
+                            -
+                        </div>
+                        <div class="quantity_input">
+                            <input type="text" value="1" id="quantity">
+                        </div>
+                        <div class="plus" onclick="increaseQuantity()">
+                            +
+                        </div>
+                    </div>
+                </div>
+                <div class="size">
+                    <h1>Size</h1>
+                    <div class="size_container">
+                        <div class="small sc">S</div>
+                        <div class="midume sc">M</div>
+                        <div class="large sc">L</div>
+                    </div>
+                </div>
+                <div class="sugar">
+                    <h1>Sugar</h1>
+                    <div class="sugar_container">
+                        <div class="percentage">10%</div>
+                        <div class="percentage">20%</div>
+                        <div class="percentage">30%</div>
+                        <div class="percentage">40%</div>
+                        <div class="percentage">50%</div>
+                        <div class="percentage">60%</div>
+                        <div class="percentage">70%</div>
+                        <div class="percentage">80%</div>
+                        <div class="percentage">90%</div>
+                        <div class="percentage">100%</div>
+                    </div>
+                </div>
+                <div class="order">
+                    <h1>Place Order</h1>
+                </div>
+            </div>
+        </div>
+
+
+       <!--see_alll-->
+        <div class="see_all" id="see_all_reference">
+            <div class="see_all_header">
+                <div class="see_all_logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="see_all_burger ">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <div class="burger_container see_all_burger_container ">
+                    <div class="login">Orders</div>
+                    <div class="favourites">favourites</div>
+                </div>
+            </div>
+            <div class="see_all_back">
+                <button class="back" ><i class="fa-solid fa-chevron-left"></i> Back</button>
+            </div>
+            <div class="coffes_list">
+                <div class="see_all_coffes">
+                    <div class="coffe_left">
+                        <div class="image">
+                            <img src="./images/list1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="coffe_right">
+                        <div class="coffe_name">
+                            <h1>Cappichino</h1>
+                        </div>
+                        <div class="coffe_description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, blanditiis.</p>
+                        </div>
+                        <div class="see_all_order">
+                            <div class="order-btn">
+                                <h1>Place Order</h1>
+                            </div>
+                            <div class="see_all_like like_div">
+                                <i class="fa-regular fa-heart" id="like" ></i>
+                                <i class="fa-solid fa-heart" id="liked"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="coffes_list">
+                <div class="see_all_coffes">
+                    <div class="coffe_left">
+                        <div class="image">
+                            <img src="./images/list2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="coffe_right">
+                        <div class="coffe_name">
+                            <h1>Cappichino</h1>
+                        </div>
+                        <div class="coffe_description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, blanditiis.</p>
+                        </div>
+                        <div class="see_all_order">
+                            <div class="order-btn">
+                                <h1>Place Order</h1>
+                            </div>
+                            <div class="see_all_like like_div">
+                                <i class="fa-regular fa-heart" id="like" ></i>
+                                <i class="fa-solid fa-heart" id="liked"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="coffes_list">
+                <div class="see_all_coffes">
+                    <div class="coffe_left">
+                        <div class="image">
+                            <img src="./images/list3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="coffe_right">
+                        <div class="coffe_name">
+                            <h1>Cappichino</h1>
+                        </div>
+                        <div class="coffe_description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, blanditiis.</p>
+                        </div>
+                        <div class="see_all_order">
+                            <div class="order-btn">
+                                <h1>Place Order</h1>
+                            </div>
+                            <div class="see_all_like like_div">
+                                <i class="fa-regular fa-heart" id="like" ></i>
+                                <i class="fa-solid fa-heart" id="liked"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coffes_list">
+                <div class="see_all_coffes">
+                    <div class="coffe_left">
+                        <div class="image">
+                            <img src="./images/list4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="coffe_right">
+                        <div class="coffe_name">
+                            <h1>Cappichino</h1>
+                        </div>
+                        <div class="coffe_description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, blanditiis.</p>
+                        </div>
+                        <div class="see_all_order">
+                            <div class="order-btn">
+                                <h1>Place Order</h1>
+                            </div>
+                            <div class="see_all_like like_div">
+                                <i class="fa-regular fa-heart" id="like" ></i>
+                                <i class="fa-solid fa-heart" id="liked"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="coffes_list">
+                <div class="see_all_coffes">
+                    <div class="coffe_left">
+                        <div class="image">
+                            <img src="./images/list5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="coffe_right">
+                        <div class="coffe_name">
+                            <h1>Cappichino</h1>
+                        </div>
+                        <div class="coffe_description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, blanditiis.</p>
+                        </div>
+                        <div class="see_all_order">
+                            <div class="order-btn">
+                                <h1>Place Order</h1>
+                            </div>
+                            <div class="see_all_like like_div">
+                                <i class="fa-regular fa-heart" id="like" ></i>
+                                <i class="fa-solid fa-heart" id="liked"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="login_page">
+            <div class="login_back">
+                <button class="back" ><i class="fa-solid fa-chevron-left"></i> Back</button>
+            </div>
+            <div class="login_logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="title"><h1>STARBUCKS</h1></div>
+            <div class="getting_login">
+                <div class="login_email">
+                    <small>Login with Email or Phone</small>
+                </div>
+                <div class="email_phone">
+                    <input type="email" type="number" name="" id="" placeholder="email or phone">
+                </div>
+                <div class="password">
+                    <input type="password" name="" id="" placeholder="password" class="passwordField"><i class="fa-solid fa-eye" id="eye"></i>
+                </div>
+                <div class="forgot_pass">
+                    <div class="forgot"><p>Forgot Password</p></div>
+                    <div class="create_account">Create Account</div>
+                </div>
+            </div>
+            <div class="signin_btn">
+                sign In
+            </div>
+            <div class="upper_poilicy">
+                .
+            </div>
+            <div class="inner_policy">
+                   .
+            </div>
+            <div class="policy">
+                <small>by Logging in you agree to the</small>
+                <p>Privacy Policy & Terms Of Services</p>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    
+
+
+    <script src="./script2.js"></script>
+</body>
+</html>
+
+
